@@ -1,7 +1,7 @@
 {
-  "name": "React-Redux-Express-Boilerplate",
+  "name": "TWest-Designs",
   "version": "1.0.0",
-  "description": "React with Redux and Express boilerplate",
+  "description": "Personal Website for Tae West",
   "scripts": {
     "test": "./node_modules/.bin/mocha",
     "start": "npm-run-all --parallel open:src lint:watch",
@@ -15,7 +15,7 @@
     "build": "babel-node tools/build.js",
     "postbuild": "babel-node tools/distServer.js"
   },
-  "author": "David Urbina",
+  "author": "John Son",
   "license": "MIT",
   "dependencies": {
     "async": "^2.0.1",
