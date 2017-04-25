@@ -4,9 +4,7 @@ import React, {PropTypes} from "react";
 import {connect} from "react-redux";
 import {bindActionCreators} from "redux";
 
-import Navbar from '../Navbar/NavbarContainer.js';
-
-class HomePage extends React.Component {
+class About extends React.Component {
     constructor(props) {
         super(props);
     }
@@ -16,14 +14,13 @@ class HomePage extends React.Component {
     render() {
         return (
             <div className="text-center">
-              <Navbar />
-                Home
+                About
             </div>
         );
     }
 }
 
-HomePage.propTypes = {
+About.propTypes = {
 
 };
 
@@ -39,4 +36,4 @@ function mapDispatchToProps(dispatch) {
     };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(HomePage);
+export default connect(mapStateToProps, mapDispatchToProps)(About);
