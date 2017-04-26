@@ -9,6 +9,8 @@ import useScroll from "react-router-scroll";
 import {generateRoutes} from "./routes";
 import "./styles/styles.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../node_modules/slick-carousel/slick/slick.css";
+import "../node_modules/slick-carousel/slick/slick-theme.css";
 
 const store = configureStore();
 
