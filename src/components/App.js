@@ -3,6 +3,8 @@ import React, { PropTypes } from "react";
 import ScrollToTop from "react-scroll-up";
 import {connect} from "react-redux";
 
+import Navbar from './Navbar/NavbarContainer.js';
+
 class App extends React.Component {
     constructor(props) {
         super(props);
@@ -15,6 +17,7 @@ class App extends React.Component {
         }
         return (
             <div>
+              <Navbar />
                 {loadingSpinner}
                 {this.props.children}
             </div>

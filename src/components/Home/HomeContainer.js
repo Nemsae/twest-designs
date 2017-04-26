@@ -4,8 +4,6 @@ import React, {PropTypes} from "react";
 import {connect} from "react-redux";
 import {bindActionCreators} from "redux";
 
-import Navbar from '../Navbar/NavbarContainer.js';
-
 class Home extends React.Component {
     constructor(props) {
         super(props);
@@ -16,7 +14,6 @@ class Home extends React.Component {
     render() {
         return (
             <div className="text-center">
-              <Navbar />
                 Home
             </div>
         );

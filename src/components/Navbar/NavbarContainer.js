@@ -3,12 +3,23 @@
 import React, {PropTypes} from "react";
 import {connect} from "react-redux";
 import {bindActionCreators} from "redux";
+import { browserHistory } from "react-router";
 
 //  import classNames for showing active tab
 
 class NavBar extends React.Component {
     constructor(props) {
         super(props);
+
+        this.state = {
+          active: 'home',
+        };
+    }
+
+    handleClick(name, path) {
+      // console.log('Sanity:');
+      // this.setState({ active: name });
+      browserHistory.push(path);
     }
 
     render() {
@@ -21,11 +32,12 @@ class NavBar extends React.Component {
                   <span className="icon-bar"/>
                   <span className="icon-bar"/>
                 </button>
-                <a className="navbar-brand" href="javascript:void(0)">TWest Designs</a>
+                {/* <a className="navbar-brand" onClick={this.handleClick('home', '/')}>TWest Designs</a> */}
+                <a className="navbar-brand" onClick={() => { this.handleClick('home', '/'); }}>TWest Designs</a>
               </div>
               <div className="navbar-collapse collapse navbar-inverse-collapse">
                 <ul className="nav navbar-nav">
-                  <li className="active"><a href="javascript:void(0)">Active</a></li>
+                  <li className="active" onClick={() => { this.handleClick('about', '/about'); }}><a href="javascript:void(0)">About</a></li>
                   <li><a href="javascript:void(0)">Link</a></li>
                   <li className="dropdown">
                     <a href="index.html" data-target="#" className="dropdown-toggle" data-toggle="dropdown">Dropdown
