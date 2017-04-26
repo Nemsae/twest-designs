@@ -78,4 +78,5 @@
 ## Todo
 
 1. Hamburger menu
-2. Email implementation to send Twest a message.
+2. Home menu wiresketching
+etc. Email implementation to send Twest a message.
