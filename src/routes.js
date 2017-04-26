@@ -2,13 +2,13 @@
 
 import React from "react";
 import { Route, IndexRedirect } from "react-router";
-import App from "./components/App";
-import Home from "./components/Home/HomeContainer";
-import About from "./components/About/AboutContainer";
-import Bids from "./components/Bids/BidsContainer";
-import Contact from "./components/Contact/ContactContainer";
-import Projects from "./components/Projects/ProjectsContainer";
-import Services from "./components/Services/ServicesContainer";
+import App from "./containers/App";
+import Home from "./containers/Home/HomeContainer";
+import About from "./containers/About/AboutContainer";
+import Bids from "./containers/Bids/BidsContainer";
+import Contact from "./containers/Contact/ContactContainer";
+import Projects from "./containers/Projects/ProjectsContainer";
+import Services from "./containers/Services/ServicesContainer";
 
 export const generateRoutes = (store) => {
 
