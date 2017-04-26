@@ -79,4 +79,6 @@
 
 1. Hamburger menu
 2. Home menu wiresketching
+3. Change news to press (news article)
+4. Possibility of References page/box
 etc. Email implementation to send Twest a message.
