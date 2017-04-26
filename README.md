@@ -77,5 +77,5 @@
 
 ## Todo
 
-1. etc
+1. Hamburger menu
 2. Email implementation to send Twest a message.

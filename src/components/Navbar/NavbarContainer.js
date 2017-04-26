@@ -18,7 +18,8 @@ class NavBar extends React.Component {
 
     handleClick(name, path) {
       // console.log('Sanity:');
-      // this.setState({ active: name });
+      console.log('name of handleClick: ', name);
+      this.setState({ active: name });
       browserHistory.push(path);
     }
 
@@ -27,20 +28,23 @@ class NavBar extends React.Component {
           <div className="navbar navbar-inverse">
             <div className="container-fluid">
               <div className="navbar-header">
+                {/* NAVBAR HAMBURGER HERE */}
+                {/* NAVBAR HAMBURGER HERE */}
                 <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
                   <span className="icon-bar"/>
                   <span className="icon-bar"/>
                   <span className="icon-bar"/>
                 </button>
-                {/* <a className="navbar-brand" onClick={this.handleClick('home', '/')}>TWest Designs</a> */}
+                {/* NAVBAR HAMBURGER HERE */}
+                {/* NAVBAR HAMBURGER HERE */}
                 <a className="navbar-brand" onClick={() => { this.handleClick('home', '/'); }}>TWest Designs</a>
               </div>
               <div className="navbar-collapse collapse navbar-inverse-collapse">
                 <ul className="nav navbar-nav">
                   <li className="active" onClick={() => { this.handleClick('about', '/about'); }}><a href="javascript:void(0)">About</a></li>
-                  <li><a href="javascript:void(0)">Link</a></li>
+                  <li onClick={() => { this.handleClick('projects', '/projects'); }}><a href="javascript:void(0)">Projects</a></li>
                   <li className="dropdown">
-                    <a href="index.html" data-target="#" className="dropdown-toggle" data-toggle="dropdown">Dropdown
+                    <a data-target="#" className="dropdown-toggle" data-toggle="dropdown">Services
                       <b className="caret"/></a>
                     <ul className="dropdown-menu">
                       <li><a href="javascript:void(0)">Action</a></li>
@@ -59,7 +63,7 @@ class NavBar extends React.Component {
                   </div>
                 </form> */}
                 <ul className="nav navbar-nav navbar-right">
-                  <li><a href="javascript:void(0)">Link</a></li>
+                  <li onClick={() => { this.handleClick('contact', '/contact'); }}><a href="javascript:void(0)">Contact</a></li>
                   <li className="dropdown">
                     <a href="index.html" data-target="#" className="dropdown-toggle" data-toggle="dropdown">Dropdown
                       <b className="caret"/></a>
