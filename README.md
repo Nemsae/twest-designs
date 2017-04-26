@@ -75,6 +75,7 @@
 
 <sub><i>Keywords: Custom Design, General Contracting, Tae West,</i></sub>
 
-## etc
+## Todo
 
 1. etc
+2. Email implementation to send Twest a message.

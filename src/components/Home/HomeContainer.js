@@ -6,7 +6,7 @@ import {bindActionCreators} from "redux";
 
 import Navbar from '../Navbar/NavbarContainer.js';
 
-class HomePage extends React.Component {
+class Home extends React.Component {
     constructor(props) {
         super(props);
     }
@@ -23,7 +23,7 @@ class HomePage extends React.Component {
     }
 }
 
-HomePage.propTypes = {
+Home.propTypes = {
 
 };
 
@@ -39,4 +39,4 @@ function mapDispatchToProps(dispatch) {
     };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(HomePage);
+export default connect(mapStateToProps, mapDispatchToProps)(Home);
