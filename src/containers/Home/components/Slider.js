@@ -1,8 +1,11 @@
 import React from 'react';
 import Slider from 'react-slick';
 
-import "../../../../dist/assets/camden/camden_interior1";
-import camdenMasterBath from './camden_masterBath.jpg';
+import camdenLivingRoom from '../../../../dist/assets/camden/camden_livingRoom.jpg';
+import camdenMasterBath from '../../../../dist/assets/camden/camden_masterBath.jpg';
+
+//  http://stackoverflow.com/questions/31397137/img-tag-not-working-with-relative-path-in-src
+//  <div><img src="http://localhost/dist/assets/camden/camden_livingRoom.jpg" alt="Camden Living Room00"/></div>
 
 export default class SimpleSlider extends React.Component {
   render() {
@@ -16,16 +19,12 @@ export default class SimpleSlider extends React.Component {
 
     return (
       <Slider {...settings}>
+        <div><img src={camdenLivingRoom} alt="Camden Living Room"/></div>
+        <div><img src={camdenMasterBath} alt="Camden Master Bath"/></div>
         <div><h3>[OUTSIDE] Chambers, Oakland CA</h3></div>
         <div><h3>[INSIDE] Chambers, Oakland CA</h3></div>
         <div><h3>[OUTSIDE] Camden, Oakland CA</h3></div>
-        {/* <div><h3>[INSIDE] Camden, Oakland CA</h3></div> */}
-        <div><img src={camdenMasterBath} alt="Camden Master Bath0000"/></div>
-        <div><img src="./camden_masterBath.jpg" alt="Camden Master Bath"/></div>
-        <div><img src="../../../../dist/assets/camden_interior1" alt="Camden Living Room"/></div>
-        <div><img src="http://i.imgur.com/TOCfkRg.jpg" alt="Camden Living Room"/></div>
-        <div><h3>5</h3></div>
-        <div><h3>6</h3></div>
+        <div><h3>[INSIDE] Camden, Oakland CA</h3></div>
       </Slider>
     );
   }
